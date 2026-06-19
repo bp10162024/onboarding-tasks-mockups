@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Buddy Punch — Onboarding, Offboarding &amp; Tasks — UI Mockups (Feature 14034)</title>
+<style>html,body{margin:0;font-family:Inter,system-ui,sans-serif;color:#1f2430}#ld{padding:40px;font-size:14px;color:#6b7280}</style>
+</head>
+<body>
+<div id="ld">Loading Buddy Punch mockups…</div>
+<script>
+(async function(){
+  var SRC="https://ltbyatmaovlbcldgdtij.supabase.co/storage/v1/object/public/mockups/onboarding-mockups.html";
+  try{
+    var res=await fetch(SRC,{cache:"no-store"});
+    if(!res.ok) throw new Error("HTTP "+res.status);
+    var html=await res.text();
+    document.open();
+    document.write(html);
+    document.close();
+  }catch(e){
+    document.getElementById("ld").innerHTML="Could not load the mockups ("+e.message+"). Try refreshing.";
+  }
+})();
+</script>
+</body>
+</html>
