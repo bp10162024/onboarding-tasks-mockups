@@ -1,0 +1,12 @@
+{
+  "name": "onboarding-tasks-mockups-host",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Serves the Buddy Punch Onboarding/Offboarding/Tasks UI mockups (Feature 14034) as text/html for developer review.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
